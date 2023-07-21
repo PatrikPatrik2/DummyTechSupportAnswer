@@ -24,7 +24,7 @@ def analyse_email(email: Email):
     original_mail = email.content
     technical_input = email.from_email
     
-    query = f"Make a frendly answer to the email below, and sign the respons mail with your name: {content} using this technical information to be able to formulate a response to the mail"
+    query = f"Make a frendly answer to the email below, and sign the respons mail with your name: {original_mail} using this technical information to be able to formulate a response to the mail: {technical_input}"
     system_message="""
 You are working at Uponor technical suppor department and your name is Tommy Lee
 
